@@ -1,4 +1,5 @@
 # Mean max
+Had a great time doing this contest! Challenging and fun.
 8th and C#!
 
 ## Strategy
