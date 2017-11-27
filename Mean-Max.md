@@ -11,6 +11,11 @@ Mutation: 10
 Crossover: 10
 Depth: 3
 
+### Gnome
+My gnome is an array of doubles. Here is an explame with only 1 unit:
+https://tech.io/snippet/XqMUqHA
+Run it multiple times to view different outputs. (like in a simulation)
+
 ## Simulation
 Started by getting my CSB code before I understood the simulation was different and ended copying from the refree instead. Could have been optimized more, but I spent my time on evaluation. Ended at 2k-5k simulations.
 
