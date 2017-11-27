@@ -158,12 +158,12 @@ Scoring values:
 * 0.25 * Rage (Granade = 60 => 15 score, which means it's to expensive to stop 1 point from the enemy)
 * 0.0002 * Every distance score
 
-### Doofer
+### Doof
 Either get Rage or target a player:
 * all scores < 10 => Keep speeding and gain Rage to prepare for later.
 * any score > 10 => Focus on Enemy target
 
-I would then score distances to the reaper, reaper's closest wreck and destroyer of that target equally. (giving my doofer the chance to drive around and not just hug 1 position)
+I would then score distances to the reaper, reaper's closest wreck and destroyer of that target equally. (giving my doof the chance to drive around and not just hug 1 position)
 
 
 ### Reaper
