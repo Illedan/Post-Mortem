@@ -74,6 +74,63 @@ public virtual double Collision_Time(Unit u)
 
 Gained 20% more simluation by using this.
 
+### Spells
+I used fixed positions based on the direction vectors to generate spell targets. 
+```
+public static Position GetGranadePosition(double target, Game game)
+{
+    var targetNade = (int)(target * 8 * 2);
+    var targetVect = Vector.DirectionVectors[targetNade % 8]; // all 8 direction vectors
+    var targetUnit = game.Players[targetNade / 8 + 1].Reaper; // + 1 because I am number 0
+    return PositionFactory.GetNewPosition(targetUnit.X + targetVect.Dx * 300, targetUnit.Y + targetVect.Dy * 300);
+}
+```
+
+
+### Factories
+Create new objects is slow, I created factories for every object I had to "create" during simulation.
+Example of a factory:
+
+```
+public static class EffectFactory
+{
+    private static Effect[] _effects = new Effect[100];
+    private static int _counter = 0;
+    private static Effect[] _used = new Effect[100];
+    private static int _usedCounter = 0;
+
+    public static int Created;
+    public static Effect GetNewEffect(double x, double y)
+    {
+        var effect = _effects[_counter--];
+        _used[_usedCounter++] = effect;
+        effect.X = x;
+        effect.Y = y;
+        effect.Duration = 3;
+        effect.IsMoveCreated = true;
+        return effect;
+    }
+
+    public static void ResetEffects()
+    {
+        _counter = 99;
+        _usedCounter = 0;
+    }
+
+    public static void Initialize()
+    {
+        for (int i = 0; i < 100; i++)
+        {
+            _effects[i] = new Effect(0, 0, true, 3);
+        }
+
+        _counter = 99;
+    }
+}
+```
+`IsMoveCreated` used by my simulation to determine which objects to remove after simulation.
+
+
 ## Enemy prediction
 Did a 5 ms search for each enemy given the other players were dummies during their search. 
 Dummies were doing straight line 300 thrusts against:
