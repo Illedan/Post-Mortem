@@ -13,7 +13,8 @@ Depth: 3
 
 ### Gnome
 My gnome is an array of doubles. Here is an example with only 1 unit:
-https://tech.io/snippet/XqMUqHA
+https://tech.io/snippet/1JNE3SQ
+
 Run it multiple times to view different outputs. (like in a simulation)
 
 ## Simulation
