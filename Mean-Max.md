@@ -11,7 +11,7 @@ Crossover: 10
 Depth: 3
 
 ## Simulation
-Started by getting my CSB code before I understood the simulation was different and ended copying from the refree instead. Could have been optimized more, but I spent my team on evaluation. Ended at 2k-5k simulations.
+Started by getting my CSB code before I understood the simulation was different and ended copying from the refree instead. Could have been optimized more, but I spent my time on evaluation. Ended at 2k-5k simulations.
 
 ### Cache collisions
 Created a list of every initial collision, found the first one (didn't bother to sort the list), performed it, subtracted the time of the first from every other collision on the list and removed those included in the first collision. Then added the new collisions of units in this first collision. This was repeated until the list was empty.
