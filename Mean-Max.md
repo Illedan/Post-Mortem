@@ -3,7 +3,7 @@ Had a great time doing this contest! Challenging and fun.
 8th and C#!
 
 ## Strategy
-Some kind of mutating search with a few crossovers. (not sure if I can call it a GA since I added too many new random gnomes every round)
+Some kind of mutating search with a few crossovers. (not sure if I can call it a GA since I added too many new random genomes every round)
 My search had these properties:
 Population: 30
 Random genes: 10
@@ -11,9 +11,9 @@ Mutation: 10
 Crossover: 10
 Depth: 3
 
-### Gnome
-My gnome is an array of doubles. Here is an example with only 1 unit:
-https://tech.io/snippet/1JNE3SQ
+### Genome
+My genome is an array of doubles. Here is an example with only 1 unit:
+https://tech.io/snippet/JqKHWRR
 
 Run it multiple times to view different outputs. (like in a simulation)
 
