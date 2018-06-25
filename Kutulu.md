@@ -31,7 +31,7 @@ public static double Evaluate(int depth, Game game, double[] data, Explorer me, 
 
         game.GameLoop();
 
-        score += ScorePos(game, me) * decay + 10000; // add 10000 to be sure to live longer
+        score += ScorePos(game, me) + 10000; // add 10000 to be sure to live longer
         if(me.IsDead) break;
     }
 
