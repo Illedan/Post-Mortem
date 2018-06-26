@@ -120,7 +120,7 @@ Yell:
 Any explorer closer than 2 and any wanderer closer than 3. (A little too stupid, but I failed to use simulation and kept my logic)
 
 Plan:
-Sanity < 220, and more than 0 explorers nearby. I find it more important to use above 200, since you delay the spawn of wanderers making you live a little longer (maybe)
+Sanity < 220, and more than 0 explorers nearby. I find it more important to use above 200, since you delay the spawn of slashers making you live a little longer (maybe)
 
 Light:
 Any wanderer more than 4 away and any explorer more than 10 away. (Using actual path distance)
